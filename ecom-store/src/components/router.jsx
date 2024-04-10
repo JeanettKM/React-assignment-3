@@ -1,13 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import FrontPage from "../pages/frontPage";
-import Product from "../pages/product";
-import Cart from "../pages/cart";
-import Checkout from "../pages/checkout";
-import CheckoutSuccess from "../pages/checkoutSuccess";
-import Contact from "../pages/contact";
+import FrontPage from "./pages/frontPage";
+import Product from "./pages/product";
+import cart from "./pages/cart";
+import Checkout from "./pages/checkout";
+import CheckoutSuccess from "./pages/checkoutSuccess";
+import Contact from "./pages/contact";
 
-const AppRouter = () => {
+const appRouter = () => {
   return (
     <Router>
       <Routes>
@@ -22,4 +22,4 @@ const AppRouter = () => {
   );
 };
 
-export default AppRouter;
+export default appRouter;
