@@ -1,4 +1,4 @@
-// src/pages/FrontPage.jsx
+// src/pages/cart.jsx
 import React from "react";
 
 const FrontPage = () => {

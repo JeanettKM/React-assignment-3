@@ -1,7 +1,20 @@
+// src/pages/product.jsx
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import ProductCard from "../components/productCard"; // Adjust the path as necessary
+import Header from "../components/header"; // Import the Header component
+import styled from "styled-components"; // Import styled-components
+
+// Create a styled component for the content container
+const ContentContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+`;
 
 const ProductDetails = () => {
   const { id } = useParams(); // Get the product ID from the URL
@@ -32,7 +45,12 @@ const ProductDetails = () => {
 
   return (
     <div>
-      <ProductCard product={product} /> {/* Use the ProductCard component */}
+      <header>
+        <Header />
+      </header>
+      <ContentContainer>
+        <ProductCard product={product} /> {/* Use the ProductCard component */}
+      </ContentContainer>
     </div>
   );
 };

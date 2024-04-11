@@ -1,8 +1,17 @@
-// src/components/cartIcon.jsx
+// src/components/CartIcon.jsx
 import React from "react";
+import styled from "styled-components";
 
-const cartIcon = ({ cartItemsCount }) => {
-  return <button>Cart ({cartItemsCount})</button>;
-};
+const CartIconWrapper = styled.div`
+  position: relative;
+  cursor: pointer;
+`;
 
-export default cartIcon;
+const CartIcon = ({ itemCount }) => (
+  <CartIconWrapper>
+    <img src="/path/to/cart-icon.svg" alt="Cart" />
+    {itemCount > 0 && <span className="cart-count">{itemCount}</span>}
+  </CartIconWrapper>
+);
+
+export default CartIcon;
