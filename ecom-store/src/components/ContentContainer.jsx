@@ -1,4 +1,3 @@
-// src/components/ContentContainer.jsx or similar
 import styled from "styled-components";
 
 const ContentContainer = styled.div`
