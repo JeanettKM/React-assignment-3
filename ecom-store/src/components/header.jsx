@@ -1,8 +1,7 @@
-// src/components/Header.jsx
 import React, { useContext } from "react";
 import styled from "styled-components";
-import CartIcon from "../components/cartIcon"; // Adjust the path as necessary
-import { CartContext } from "../components/CartContext"; // Adjust the path to import CartContext correctly
+import CartIcon from "../components/cartIcon";
+import { CartContext } from "../components/CartContext";
 
 const StyledHeader = styled.header`
   background-color: #f8f9fa;
@@ -11,14 +10,13 @@ const StyledHeader = styled.header`
 `;
 
 const Header = () => {
-  const { cart } = useContext(CartContext); // Access cart from context
-  const cartItemCount = cart.reduce((total, item) => total + item.quantity, 0); // Sum up the quantities of all items
+  const { cart } = useContext(CartContext);
+  const cartItemCount = cart.reduce((total, item) => total + item.quantity, 0);
 
   return (
     <StyledHeader>
       <h1>ECom Store</h1>
       <CartIcon itemCount={cartItemCount} />{" "}
-      {/* Include the CartIcon component and pass the total item count */}
     </StyledHeader>
   );
 };

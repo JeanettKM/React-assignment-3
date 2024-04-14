@@ -1,4 +1,3 @@
-// src/pages/FrontPage.jsx
 import React from "react";
 
 const FrontPage = () => {

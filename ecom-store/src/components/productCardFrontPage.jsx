@@ -1,14 +1,10 @@
-// src/components/ProductCard.jsx
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-// Define styled components for the ProductCard
 const CardContainer = styled.div`
-  width: calc(
-    33.33% - 20px
-  ); // Adjust the width to fit 3 cards in a row, accounting for margins
-  margin: 10px; // Add some margin around each card for spacing
+  width: calc(33.33% - 20px);
+  margin: 10px;
   display: flex;
   flex-direction: column;
 `;
@@ -19,16 +15,16 @@ const Card = styled.div`
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: center;
-  height: 400px; // Set a fixed height for the card
+  height: 400px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; // Ensure content is spaced out
+  justify-content: space-between;
 `;
 
 const Image = styled.img`
   width: 100%;
-  height: 200px; // Set a fixed height for the image
-  object-fit: cover; // Ensure the image covers the area without stretching
+  height: 200px;
+  object-fit: cover;
 `;
 
 const Title = styled.h1`
@@ -39,10 +35,10 @@ const Title = styled.h1`
 const Description = styled.p`
   font-size: 1em;
   color: #666;
-  overflow: hidden; // Hide overflowing text
-  text-overflow: ellipsis; // Use ellipsis for overflowing text
+  overflow: hidden;
+  text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 3; // Limit to 3 lines
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 `;
 
@@ -60,8 +56,6 @@ const ViewProductButton = styled(Link)`
 `;
 
 const ProductCard = ({ product }) => {
-  // Assuming the product object has an image property that is an object with a url key
-  // Adjust this line if the structure of your product object is different
   const imageUrl = product.image ? product.image.url : "";
 
   return (

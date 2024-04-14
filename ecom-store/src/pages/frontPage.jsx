@@ -1,13 +1,11 @@
-// src/pages/frontPage.jsx
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import Header from "../components/header";
-import ProductCard from "../components/productCardFrontPage"; // Import the ProductCard component
-import styled from "styled-components"; // Import styled-components
+import ProductCard from "../components/productCardFrontPage";
+import styled from "styled-components";
 import footer from "../components/footer";
 
-// Create a styled component for the content container
 const ContentContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -17,13 +15,12 @@ const ContentContainer = styled.div`
   padding: 20px;
 `;
 
-// Create a styled component for the product cards container
 const ProductsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 80%; // Set a specific width for the container to ensure it's centered
-  margin: 0 auto; // Center the container
+  width: 80%;
+  margin: 0 auto;
 `;
 
 const FrontPage = () => {
@@ -37,10 +34,7 @@ const FrontPage = () => {
         if (Array.isArray(response.data.data)) {
           setProducts(response.data.data);
         } else {
-          console.error(
-            "Expected an array of products, but received:",
-            response.data.data
-          );
+          console.error(response.data.data);
         }
       })
       .catch((error) => console.error(error));
@@ -53,10 +47,10 @@ const FrontPage = () => {
   return (
     <div>
       <header>
-        <Header /> {/* Include the Header component */}
+        <Header />
       </header>
       <ContentContainer>
-        <h1>Welcome to the ECom Store</h1>
+        <h1>ECom Store</h1>
         <input
           type="text"
           placeholder="Search products..."

@@ -1,4 +1,3 @@
-// src/components/Footer.jsx
 import React from "react";
 import styled from "styled-components";
 
@@ -14,12 +13,7 @@ const FooterWrapper = styled.footer`
 const Footer = () => {
   return (
     <FooterWrapper>
-      <p>© 2023 ECom Store. All rights reserved.</p>
-      <nav>
-        <a href="/about">About</a>
-        <a href="/contact">Contact</a>
-        <a href="/privacy">Privacy Policy</a>
-      </nav>
+      <p>All rights reserved.</p>
     </FooterWrapper>
   );
 };
