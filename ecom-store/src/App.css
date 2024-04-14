@@ -37,7 +37,6 @@
   }
 }
 
-/* src/App.css */
 
 .cart-count {
   position: absolute;
@@ -49,10 +48,6 @@
   border-radius: 50%;
   font-size: 12px;
 }
-
-/* src/App.css */
-
-/* Other global styles */
 
 /* Footer styles */
 footer {

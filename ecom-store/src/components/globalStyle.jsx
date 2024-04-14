@@ -1,4 +1,4 @@
-// src/components/globalStyle.jsx
+
 import { createGlobalStyle } from "styled-components";
 
 const globalStyle = createGlobalStyle`
@@ -17,7 +17,6 @@ const globalStyle = createGlobalStyle`
     color: #666;
  }
 
- /* Add more global styles as needed */
 `;
 
 export default globalStyle;

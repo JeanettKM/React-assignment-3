@@ -50,7 +50,7 @@ const FrontPage = () => {
         <Header />
       </header>
       <ContentContainer>
-        <h1>ECom Store</h1>
+        <h1>My Javascript framework ECom Store</h1>
         <input
           type="text"
           placeholder="Search products..."

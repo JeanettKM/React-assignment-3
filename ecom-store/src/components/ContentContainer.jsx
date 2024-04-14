@@ -7,7 +7,7 @@ const ContentContainer = styled.div`
   justify-content: center;
   width: 100%;
   padding: 20px;
-  padding-bottom: 100px; /* Adjust this value based on the height of your footer */
+  padding-bottom: 100px;
 `;
 
 export default ContentContainer;

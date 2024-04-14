@@ -1,4 +1,3 @@
-// src/components/ProductCard.jsx
 import React from "react";
 import styled from "styled-components";
 
@@ -8,7 +7,7 @@ const ProductCardContainer = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 600px; // Adjust as needed
+  max-width: 600px;
   margin: 0 auto;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
