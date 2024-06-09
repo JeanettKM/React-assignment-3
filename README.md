@@ -12,6 +12,8 @@ This is a school project for the JavaScript Frameworks CA (Course Assignment). T
 
 This project is under development and will be completed and available to view by 23.06.24.
 
+<br>
+
 ## Built With
 
 <img align="left" alt="JavaScript" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>**JavaScript**
@@ -25,6 +27,8 @@ This project is under development and will be completed and available to view by
 <img align="left" alt="React" width="30px" style="padding-right:10px;" src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/react/react-original.svg"/>**React**
 
 <img align="left" alt="Bootstrap" width="30px" style="padding-right:10px;" src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/bootstrap/bootstrap-original.svg"/> **Bootstrap**
+
+<br>
 
 ## Getting Started
 
@@ -55,6 +59,7 @@ To run the app, execute the following command:
 ```bash
 npm start
 ```
+<br>
 
 ## Dependencies
 
@@ -66,14 +71,20 @@ This project currently relies on the following dependencies:
 
 Additional dependencies may be added as development progresses.
 
+<br>
+
 ## Contributing
 
 I am not accepting contributions at this moment.
+
+<br>
 
 ## Contact
 
 Jeanett K. Melsom - [LinkedIn](https://www.linkedin.com/in/jeanett-melsom-927ab4123/)
 <img align="left" alt="JavaScript" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" />
+
+<br>
 
 ## License
 
