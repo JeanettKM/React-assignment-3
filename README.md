@@ -29,6 +29,17 @@ This is a project which is under development due to me having a resit, and it wi
 
 ## Getting Started
 
+## Dependencies
+
+This project currently relies on the following dependencies:
+
+- [axios](https://www.npmjs.com/package/axios) ^1.6.8
+- [react-router-dom](https://www.npmjs.com/package/react-router-dom) ^6.22.3
+- [styled-components](https://www.npmjs.com/package/styled-components) ^6.1.8
+
+Please note that this is an unfinished project, and additional dependencies may be added as development progresses.
+
+
 # Installing
 
 1. Clone the repo:
@@ -54,16 +65,6 @@ This is a project which is under development due to me having a resit, and it wi
    ```bash
    npm start
    ```
-
-## Dependencies
-
-This project currently relies on the following dependencies:
-
-- [axios](https://www.npmjs.com/package/axios) ^1.6.8
-- [react-router-dom](https://www.npmjs.com/package/react-router-dom) ^6.22.3
-- [styled-components](https://www.npmjs.com/package/styled-components) ^6.1.8
-
-Please note that this is an unfinished project, and additional dependencies may be added as development progresses.
 
 ### Running
 
