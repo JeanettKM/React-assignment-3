@@ -2,8 +2,6 @@
 
 ![Project Logo](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
 
-A simple overview of the use/purpose of the project.
-
 ## Description
 
 This is a school project for the JavaScript Frameworks CA (Course Assignment). The project involves building a page using the knowledge acquired from the JS frameworks course to demonstrate our skills.
