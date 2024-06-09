@@ -1,61 +1,57 @@
 # JavaScript Frameworks CA
 
-![image](/Images/Placeholder-_-Glossary.svg)
+![Project Logo](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
+
+A simple overview of the use/purpose of the project.
 
 ## Description
 
-This is a school project for the JavaScript Frameworks CA (CA = Course Assignment).
-We're supposed to build a page using the aquired knowledge from the JS frameworks course to show our skills so far.
+This is a school project for the JavaScript Frameworks CA (Course Assignment). The project involves building a page using the knowledge acquired from the JS frameworks course to demonstrate our skills.
 
-This is a project which is under development due to me having a resit, and it will be finished and available to view within 23.06.24.
+**IMPORTANT NOTE:** This project is visible to the public due to a requirement for my portfolio CA. I do NOT advise anyone outside of Noroff to copy this project as it is unfinished and may lack important files or requirements.
 
-IMPORTANT NOTE: 
-- The only reason this project is visable for the public is due to it being a requirement for my portfolio CA. I do NOT advise anyone outside of Noroff to copy this project as its barely working already due to it not being finished and may lack important files or requirements.
+### Current Status
+
+This project is under development and will be completed and available to view by 23.06.24.
 
 ## Built With
 
-<img align="left" alt="JavaScript" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>
-
-<img align="left" alt="HTML5" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg"/>
-          
-<img align="left" alt="CSS3" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg"/>
-
-<img align="left" alt="Visual Studio Code" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg"/>
-
-<img align="left" alt="React" width="30px" style="padding-right:10px;" src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/react/react-original.svg"/>
-
-<img align="left" alt="Bootstrap" width="30px" style="padding-right:10px;" src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/bootstrap/bootstrap-original.svg"/>
-
-##
+- ![JavaScript](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg) **JavaScript**
+- ![HTML5](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg) **HTML5**
+- ![CSS3](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg) **CSS3**
+- ![Visual Studio Code](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg) **Visual Studio Code**
+- ![React](https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/react/react-original.svg) **React**
+- ![Bootstrap](https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/bootstrap/bootstrap-original.svg) **Bootstrap**
 
 ## Getting Started
 
+### Installing
 
-# Installing
+1. Clone the repository:
 
-1. Clone the repo:
+    ```bash
+    git clone https://github.com/JeanettKM/React-assignment-3.git
+    ```
 
-   ```bash
-   git clone https://github.com/JeanettKM/React-assignment-3.git
-   ```
+2. Navigate to the project directory:
 
-2. Open terminal and navigate to the project directory:
-
-   ```bash
-   cd React-assignment-3
-   ```
+    ```bash
+    cd React-assignment-3
+    ```
 
 3. Install the dependencies:
 
-   ```bash
-   npm install
-   ```
+    ```bash
+    npm install
+    ```
 
-4. Start the development server:
+### Running
 
-   ```bash
-   npm start
-   ```
+To run the app, execute the following command:
+
+```bash
+npm start
+```
 
 ## Dependencies
 
@@ -65,17 +61,20 @@ This project currently relies on the following dependencies:
 - [react-router-dom](https://www.npmjs.com/package/react-router-dom) ^6.22.3
 - [styled-components](https://www.npmjs.com/package/styled-components) ^6.1.8
 
-Please note that this is an unfinished project, and additional dependencies may be added as development progresses.
+Additional dependencies may be added as development progresses.
 
 ## Contributing
 
-Im not taking any contributions as of this moment.
+I am not accepting contributions at this moment.
 
 ## Contact
 
-Jeanett Melsom - https://www.linkedin.com/in/jeanett-melsom-927ab4123/
-<img align="left" alt="JavaScript" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" />
+Jeanett Melsom - [LinkedIn](https://www.linkedin.com/in/jeanett-melsom-927ab4123/)
+
+![LinkedIn](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg)
 
 ## License
+
+No license required. You are free to clone this project if you wish.
 
 No license required, you can clone this project if you want to.
