@@ -74,7 +74,7 @@ I am not accepting contributions at this moment.
 
 ## Contact
 
-Jeanett Melsom - [LinkedIn](https://www.linkedin.com/in/jeanett-melsom-927ab4123/)
+Jeanett K. Melsom - [LinkedIn](https://www.linkedin.com/in/jeanett-melsom-927ab4123/)
 <img align="left" alt="JavaScript" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" />
 
 ## License
