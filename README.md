@@ -11,6 +11,9 @@ We're supposed to build a page using the aquired knowledge from the JS framework
 
 This is a project which is under development due to me having a resit, and it will be finished and available to view within 23.06.24.
 
+IMPORTANT NOTE: 
+- The only reason this project is visable for the public is due to it being a requirement for my portfolio CA. I do NOT advise anyone outside of Noroff to copy this project as its barely working already due to it not being finished and may lack important files or requirements.
+
 ## Built With
 
 <img align="left" alt="JavaScript" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>
@@ -68,7 +71,7 @@ Please note that this is an unfinished project, and additional dependencies may 
 
 ## Contributing
 
-If you want to contribute to the project then you are more than welcome to do so, make a pull request or contact me through the provided contact details in my profile.
+Im not taking any contributions as of this moment.
 
 ## Contact
 
