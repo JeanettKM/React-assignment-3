@@ -1,8 +1,6 @@
-# React-assignment-3
+# JavaScript Frameworks CA
 
 ![image](/Images/Placeholder-_-Glossary.svg)
-
-JavaScript Frameworks CA
 
 ## Description
 
