@@ -38,7 +38,7 @@ This is a project which is under development due to me having a resit, and it wi
    git clone https://github.com/JeanettKM/React-assignment-3.git
    ```
 
-2. Navigate to the project directory:
+2. Open terminal and navigate to the project directory:
 
    ```bash
    cd React-assignment-3
@@ -51,14 +51,6 @@ This is a project which is under development due to me having a resit, and it wi
    ```
 
 4. Start the development server:
-
-   ```bash
-   npm start
-   ```
-
-### Running
-
-Open the project in your preferred text editor and start the development server via terminal:
 
    ```bash
    npm start
