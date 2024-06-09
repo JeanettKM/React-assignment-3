@@ -4,7 +4,7 @@
 
 ## Description
 
-This is a project for JavaScript Frameworks CA.
+This is a school project for the JavaScript Frameworks CA (CA = Course Assignment).
 We're supposed to build a page using the aquired knowledge from the JS frameworks course to show our skills so far.
 
 This is a project which is under development due to me having a resit, and it will be finished and available to view within 23.06.24.
