@@ -90,4 +90,3 @@ Jeanett K. Melsom - [LinkedIn](https://www.linkedin.com/in/jeanett-melsom-927ab4
 
 No license required. You are free to clone this project if you wish.
 
-No license required, you can clone this project if you want to.
