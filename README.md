@@ -67,11 +67,7 @@ Please note that this is an unfinished project, and additional dependencies may 
 
 ### Running
 
-To run the project locally, follow these steps:
-
-1. Make sure you have installed all the dependencies as mentioned in the [Installing](#installing) section.
-
-2. Start the development server:
+Open the project in your preferred text editor and start the development server via terminal:
 
    ```bash
    npm start
