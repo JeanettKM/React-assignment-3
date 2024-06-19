@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
+import { CartContext } from "../components/CartContext";
 
 const ProductCardContainer = styled.div`
   display: flex;
@@ -31,25 +32,51 @@ const ProductDescription = styled.p`
   margin-bottom: 20px;
 `;
 
+const ButtonContainer = styled.div`
+  display: flex;
+  gap: 10px;
+`;
+
 const AddToCartButton = styled.button`
-  background-color: #007bff;
+  background-color: #28a745;
   color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   &:hover {
-    background-color: #0056b3;
+    background-color: #218838;
+  }
+`;
+
+const RemoveFromCartButton = styled.button`
+  background-color: #dc3545;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    background-color: #c82333;
   }
 `;
 
 const ProductCard = ({ product }) => {
+  const { addToCart, removeFromCart } = useContext(CartContext);
+
   return (
     <ProductCardContainer>
       <ProductImage src={product.image.url} alt={product.title} />
       <ProductTitle>{product.title}</ProductTitle>
       <ProductDescription>{product.description}</ProductDescription>
-      <AddToCartButton>Add to Cart</AddToCartButton>
+      <ButtonContainer>
+        <AddToCartButton onClick={() => addToCart(product)}>
+          Add to Cart
+        </AddToCartButton>
+        <RemoveFromCartButton onClick={() => removeFromCart(product.id)}>
+          Remove from Cart
+        </RemoveFromCartButton>
+      </ButtonContainer>
     </ProductCardContainer>
   );
 };

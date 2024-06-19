@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import Header from "../components/header";
-import ProductCard from "../components/productCardFrontPage";
+import Header from "../components/Header";
+import ProductCard from "../components/ProductCardFrontPage";
 import styled from "styled-components";
-import footer from "../components/footer";
+import Footer from "../components/Footer";
 
 const ContentContainer = styled.div`
   display: flex;
@@ -46,9 +46,7 @@ const FrontPage = () => {
 
   return (
     <div>
-      <header>
-        <Header />
-      </header>
+      <header></header>
       <ContentContainer>
         <h1>My Javascript framework ECom Store</h1>
         <input

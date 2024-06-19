@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { CartContext } from "../components/CartContext";
 
 const CardContainer = styled.div`
   width: calc(33.33% - 20px);
@@ -42,9 +43,14 @@ const Description = styled.p`
   -webkit-box-orient: vertical;
 `;
 
+const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
 const ViewProductButton = styled(Link)`
   display: inline-block;
-  margin-top: 10px;
   padding: 10px 20px;
   background-color: #007bff;
   color: white;
@@ -55,7 +61,21 @@ const ViewProductButton = styled(Link)`
   }
 `;
 
+const AddToCartButton = styled.button`
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    background-color: #218838;
+  }
+`;
+
 const ProductCard = ({ product }) => {
+  const { addToCart } = useContext(CartContext);
   const imageUrl = product.image ? product.image.url : "";
 
   return (
@@ -64,9 +84,14 @@ const ProductCard = ({ product }) => {
         <Image src={imageUrl} alt={product.title} />
         <Title>{product.title}</Title>
         <Description>{product.description}</Description>
-        <ViewProductButton to={`/product/${product.id}`}>
-          View product
-        </ViewProductButton>
+        <ButtonContainer>
+          <ViewProductButton to={`/product/${product.id}`}>
+            View Product
+          </ViewProductButton>
+          <AddToCartButton onClick={() => addToCart(product)}>
+            Add to Cart
+          </AddToCartButton>
+        </ButtonContainer>
       </Card>
     </CardContainer>
   );

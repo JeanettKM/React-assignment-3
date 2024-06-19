@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
-import ProductCard from "../components/productCard";
-import Header from "../components/header";
+import ProductCard from "../components/ProductCard";
+import Header from "../components/Header";
 import styled from "styled-components";
 
 const ContentContainer = styled.div`
@@ -43,9 +43,7 @@ const ProductDetails = () => {
 
   return (
     <div>
-      <header>
-        <Header />
-      </header>
+      <header></header>
       <ContentContainer>
         <ProductCard product={product} />
       </ContentContainer>

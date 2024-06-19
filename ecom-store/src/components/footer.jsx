@@ -1,20 +1,18 @@
 import React from "react";
 import styled from "styled-components";
 
-const FooterWrapper = styled.footer`
+const StyledFooter = styled.footer`
   background-color: #f8f9fa;
   padding: 20px;
   text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  margin-top: auto;
 `;
 
 const Footer = () => {
   return (
-    <FooterWrapper>
-      <p>All rights reserved.</p>
-    </FooterWrapper>
+    <StyledFooter>
+      <p>&copy; 2024 ECom Store. All rights reserved.</p>
+    </StyledFooter>
   );
 };
 
