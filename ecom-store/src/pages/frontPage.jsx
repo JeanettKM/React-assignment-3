@@ -1,27 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
-import Header from "../components/Header";
 import ProductCard from "../components/ProductCardFrontPage";
-import styled from "styled-components";
-import Footer from "../components/Footer";
-
-const ContentContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  padding: 20px;
-`;
-
-const ProductsContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 80%;
-  margin: 0 auto;
-`;
+import "../App.css"; // Import the CSS file
 
 const FrontPage = () => {
   const [products, setProducts] = useState([]);
@@ -31,10 +11,13 @@ const FrontPage = () => {
     axios
       .get("https://v2.api.noroff.dev/online-shop")
       .then((response) => {
-        if (Array.isArray(response.data.data)) {
+        // Ensure to access the correct data structure
+        if (response.data && Array.isArray(response.data)) {
+          setProducts(response.data);
+        } else if (response.data.data && Array.isArray(response.data.data)) {
           setProducts(response.data.data);
         } else {
-          console.error(response.data.data);
+          console.error("Unexpected data structure:", response.data);
         }
       })
       .catch((error) => console.error(error));
@@ -47,7 +30,7 @@ const FrontPage = () => {
   return (
     <div>
       <header></header>
-      <ContentContainer>
+      <div className="content-container">
         <h1>My Javascript framework ECom Store</h1>
         <input
           type="text"
@@ -55,12 +38,12 @@ const FrontPage = () => {
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
-        <ProductsContainer>
+        <div className="products-container">
           {filteredProducts.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
-        </ProductsContainer>
-      </ContentContainer>
+        </div>
+      </div>
     </div>
   );
 };
