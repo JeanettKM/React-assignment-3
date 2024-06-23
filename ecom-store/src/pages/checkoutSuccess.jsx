@@ -14,7 +14,7 @@ const CheckoutSuccessPage = () => {
       <h1 className="success-title">Order Successful!</h1>
       <p>Thank you for your support, hope to see you again</p>
       <Link to="/" className="button back-button">
-        Back to Store
+        Back to Home
       </Link>
     </div>
   );

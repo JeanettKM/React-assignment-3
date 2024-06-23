@@ -22,6 +22,7 @@ footer {
   padding: 20px;
   text-align: center;
   margin-top: 20px;
+  color: #747474;
 }
 
 .card > h1 {
@@ -80,13 +81,14 @@ footer {
   margin: 0 auto;
   padding: 20px;
   background-color: #fcfcfc;
-  border-radius: 10px;
+  border-radius: 3px;
 }
 
 .product-image {
-  width: 100%;
-  height: auto;
+  width: auto;
   border-radius: 3px;
+  height: 400px;
+  object-fit: cover;
 }
 
 .product-title {
@@ -105,13 +107,23 @@ footer {
 .product-price {
   font-size: 18px;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .button-container {
+  margin-top: 10px;
   display: flex;
-  gap: 10px;
+  gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+a > button {
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 3px;
+  cursor: pointer;
 }
 
 .review {
@@ -120,7 +132,7 @@ footer {
   padding: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
-  border-radius: 5px;
+  border-radius: 3px;
   padding-left: 10px;
   padding-right: 150px;
 }
@@ -133,7 +145,7 @@ footer {
   background-color: red;
   color: white;
   padding: 2px 6px;
-  border-radius: 50%;
+  border-radius: 3px;
   font-size: 12px;
 }
 
@@ -163,7 +175,7 @@ footer {
   background-color: red;
   color: white;
   padding: 2px 6px;
-  border-radius: 50%;
+  border-radius: 3px;
   font-size: 12px;
 }
 
@@ -199,14 +211,35 @@ footer {
   text-decoration: underline;
 }
 
-/* General Styles */
+/* error handling */
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+  display: block;
+}
+
+/* Style for input fields with errors */
+.input-error {
+  border: 1px solid red;
+  background-color: #ffe6e6;
+}
+
+/* Often used styles*/
 .container {
   max-width: 800px;
   margin: 30px auto;
   padding: 20px;
   background-color: #f8f9fa;
-  border-radius: 10px;
+  border-radius: 3px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.container > form {
+  text-align: left;
+  width: 650px;
+  margin: auto;
 }
 
 .title {
@@ -217,10 +250,10 @@ footer {
 
 .button {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 5px 20px;
   text-align: center;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 3px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
@@ -252,9 +285,11 @@ footer {
 .complete-button {
   background-color: #28a745;
   color: white;
+  display: block;
+  margin: 20px auto 0;
+  width: 170px;
 }
 
-/* Ensure buttons do not overlap on smaller screens */
 @media (max-width: 1580px) {
   .button {
     padding: 8px 16px;
@@ -274,7 +309,7 @@ footer {
   }
 
   .card {
-    height: auto;
+    height: 470px;
   }
 
   .products-container {
@@ -349,7 +384,7 @@ footer {
 
 @media (max-width: 992px) {
   .button {
-    padding: 6px 12px;
+    padding: px 12px;
     font-size: 12px;
   }
 
@@ -374,10 +409,11 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   .button-container {
-    flex-direction: column;
+    flex-direction: row;
     align-items: stretch;
+    margin-top: 20px;
   }
 
   .title {
@@ -389,11 +425,11 @@ footer {
   }
 
   .card-container {
-    width: calc(100% - 20px);
+    width: calc(50% - 100px);
   }
 
   .products-container {
-    width: 60%;
+    width: 80%;
   }
 }
 
@@ -408,13 +444,6 @@ footer {
   margin: 0 auto;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-}
-
-.product-image {
-  width: auto;
-  height: 450px;
-  object-fit: cover;
   border-radius: 3px;
 }
 
@@ -433,6 +462,7 @@ footer {
 
 .product-price {
   font-size: 20px;
+  margin-top: 20px;
   margin-bottom: 30px;
   color: #28a745;
   font-weight: 600;
@@ -440,10 +470,10 @@ footer {
 
 .button-container {
   display: flex;
-  gap: 15px;
+  gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 /* Front Page Product Card Styles */
@@ -455,14 +485,14 @@ footer {
 }
 
 .card {
-  border-radius: 10px;
+  border-radius: 3px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: center;
-  height: 450px;
+  height: 470px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .image {
@@ -475,11 +505,12 @@ footer {
 .description {
   font-size: 1.05em;
   color: #666;
-  overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+  font-size: 14.5px;
+  text-align: center;
 }
 
 .view-product-button {
@@ -526,6 +557,11 @@ footer {
 }
 
 @media (max-width: 992px) {
+  .container > form {
+    text-align: left;
+    width: 500px;
+    margin: auto;
+  }
   .card-container {
     width: calc(50% - 20px);
   }
@@ -553,7 +589,12 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
+  .container > form {
+    text-align: left;
+    width: 410px;
+    margin: auto;
+  }
   .card-container {
     width: calc(100% - 20px);
   }
@@ -563,9 +604,8 @@ footer {
   }
 
   .button {
-    width: 70%;
     margin-bottom: 10px;
-    margin: auto;
+
     padding: 6px 10px;
   }
 
@@ -591,7 +631,7 @@ footer {
   width: 50px;
   height: 50px;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 3px;
   margin-right: 20px;
 }
 
@@ -616,7 +656,7 @@ footer {
   color: white;
   border: none;
   padding: 5px 10px;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .remove-button:hover {
@@ -639,13 +679,13 @@ footer {
 .checkout-button {
   background-color: #007bff;
   color: white;
-  width: 100%;
+  width: 40%;
   text-decoration: none;
   padding: 10px 20px;
   display: inline-block;
   text-align: center;
-  border-radius: 5px;
-  margin-top: 20px;
+  border-radius: 3px;
+  margin: 20px auto 0;
 }
 
 /* Checkout Success Page */
@@ -683,7 +723,7 @@ footer {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .submit-button {
@@ -714,5 +754,18 @@ footer {
 @media (min-width: 1700px) {
   .products-container {
     max-width: 1200px;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    border-radius: 0%;
+  }
+
+  .product-image {
+    width: auto;
+    border-radius: 3px;
+    height: 350px;
+    object-fit: cover;
   }
 }

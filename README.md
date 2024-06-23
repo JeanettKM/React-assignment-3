@@ -13,12 +13,6 @@ JavaScript Frameworks CA
 
 This is a school project for the JavaScript Frameworks CA (Course Assignment). The project involves building a page using the knowledge acquired from the JS frameworks course to demonstrate our skills.
 
-**IMPORTANT NOTE:** This project is visible to the public due to a requirement for my portfolio CA. I do NOT advise anyone outside of Noroff to copy this project as it is unfinished and may lack important files or requirements.
-
-### Current Status
-
-This project is under development and will be completed and available to view by 23.06.24.
-
 <br>
 
 ## Built With

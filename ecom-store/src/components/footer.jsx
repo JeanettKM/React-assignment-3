@@ -11,7 +11,7 @@ const StyledFooter = styled.footer`
 const Footer = () => {
   return (
     <StyledFooter>
-      <p>&copy; 2024 SHOPit. All rights reserved.</p>
+      <p>&copy; 2024 SHOPit.</p>
     </StyledFooter>
   );
 };

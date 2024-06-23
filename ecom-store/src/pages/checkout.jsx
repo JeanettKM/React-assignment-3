@@ -33,7 +33,7 @@ const Checkout = () => {
       </div>
       <div className="total">Total: ${total.toFixed(2)}</div>
       <Link to="/checkout-success" className="button complete-button">
-        Complete Checkout
+        Complete your checkout
       </Link>
     </div>
   );
