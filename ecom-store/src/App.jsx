@@ -1,14 +1,14 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import FrontPage from "./pages/FrontPage";
-import Product from "./pages/Product";
-import Cart from "./pages/Cart";
-import Checkout from "./pages/Checkout";
-import CheckoutSuccess from "./pages/CheckoutSuccess";
-import Contact from "./pages/Contact";
-import { CartProvider } from "./components/CartContext";
-import Layout from "./components/Layout";
+import FrontPage from "./pages/FrontPage.jsx";
+import Product from "./pages/Product.jsx";
+import Cart from "./pages/Cart.jsx";
+import Checkout from "./pages/Checkout.jsx";
+import CheckoutSuccess from "./pages/CheckoutSuccess.jsx";
+import Contact from "./pages/Contact.jsx";
+import { CartProvider } from "./components/CartContext.jsx";
+import Layout from "./components/Layout.jsx";
 
 function App() {
   return (
