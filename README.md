@@ -13,6 +13,8 @@ JavaScript Frameworks CA
 
 This is a school project for the JavaScript Frameworks CA (Course Assignment). The project involves building a page using the knowledge acquired from the JS frameworks course to demonstrate our skills.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5bf89720-cd52-455a-8089-bfd74bf4f200/deploy-status)](https://app.netlify.com/sites/jsframework-ca-jkm/deploys)
+
 <br>
 
 ## Built With
