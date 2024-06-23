@@ -10,7 +10,9 @@ const Header = () => {
 
   return (
     <header className="header">
-      <h1 className="title">ECom Store</h1>
+      <Link to="/" className="title-link">
+        <h1 className="title">SHOPit</h1>
+      </Link>
       <nav className="nav">
         <Link to="/" className="nav-link">
           Home

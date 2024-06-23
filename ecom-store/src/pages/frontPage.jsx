@@ -31,12 +31,13 @@ const FrontPage = () => {
     <div>
       <header></header>
       <div className="content-container">
-        <h1>My Javascript framework ECom Store</h1>
+        <h1>Welcome to SHOPit, we got it all!</h1>
         <input
           type="text"
           placeholder="Search products..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
+          className="search-bar"
         />
         <div className="products-container">
           {filteredProducts.map((product) => (

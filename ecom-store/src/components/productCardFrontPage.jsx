@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../components/CartContext";
-import "../App.css"; // Import the CSS file
+import "../App.css";
 
 const ProductCardFrontPage = ({ product }) => {
   const { addToCart } = useContext(CartContext);

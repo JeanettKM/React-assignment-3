@@ -2,45 +2,127 @@
 html,
 body {
   height: 100%;
+  margin: 0;
+  font-family: "Abel", sans-serif;
 }
 
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.card > h1 {
+  margin-top: 10px;
+  font-size: 1.6em;
+}
+
+/* Header styles */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #f8f9fa;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.5em;
+  color: inherit; /* Ensure the title color inherits from the parent */
+}
+
+.title-link {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit color from parent */
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 1em;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.search-bar {
+  width: 250px;
+  border-radius: 3px;
+  border: 1.5px solid #e0e0e0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.product-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fcfcfc;
+  border-radius: 10px;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+
+.product-title {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.product-description {
+  font-size: 16px;
+  margin-bottom: 20px;
+  white-space: normal;
+  overflow: visible;
+  display: block;
+}
+
+.product-price {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.review {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 150px;
 }
 
 /* Cart count styles */
@@ -57,11 +139,10 @@ body {
 
 /* Footer styles */
 footer {
-  bottom: 0;
-  width: 100%;
   background-color: #f8f9fa;
   padding: 20px;
   text-align: center;
+  margin-top: auto;
 }
 
 /* Cart icon styles */
@@ -121,7 +202,7 @@ footer {
 /* General Styles */
 .container {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 30px auto;
   padding: 20px;
   background-color: #f8f9fa;
   border-radius: 10px;
@@ -157,13 +238,20 @@ footer {
   background-color: #218838;
 }
 
+.product-remove-from-cart-button,
 .remove-from-cart-button {
   background-color: #dc3545;
   color: white;
 }
 
+.product-remove-from-cart-button:hover,
 .remove-from-cart-button:hover {
   background-color: #c82333;
+}
+
+.complete-button {
+  background-color: #28a745;
+  color: white;
 }
 
 /* Ensure buttons do not overlap on smaller screens */
@@ -292,17 +380,6 @@ footer {
     align-items: stretch;
   }
 
-  .button {
-    width: 60%;
-    margin-bottom: 10px;
-    margin: auto;
-  }
-
-  .button {
-    padding: 5px 10px;
-    font-size: 11px;
-  }
-
   .title {
     font-size: 1.25em;
   }
@@ -335,10 +412,10 @@ footer {
 }
 
 .product-image {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 450px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 3px;
 }
 
 .product-title {
@@ -350,14 +427,23 @@ footer {
   font-size: 16px;
   margin-bottom: 20px;
   white-space: normal;
+  overflow: visible;
   display: block;
+}
+
+.product-price {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #28a745;
+  font-weight: 600;
 }
 
 .button-container {
   display: flex;
-  gap: 10px;
+  gap: 15px;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
 /* Front Page Product Card Styles */
@@ -369,7 +455,6 @@ footer {
 }
 
 .card {
-  border: 1px solid #e0e0e0;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -384,12 +469,14 @@ footer {
   width: 100%;
   height: 200px;
   object-fit: cover;
+  border-radius: 3px;
 }
 
 .description {
-  font-size: 1em;
+  font-size: 1.05em;
   color: #666;
-  overflow: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -408,6 +495,10 @@ footer {
 @media (max-width: 1580px) {
   .searchField {
     width: 70vw;
+  }
+
+  .card-container {
+    width: calc(50% - 20px);
   }
 
   .products-container {
@@ -444,8 +535,13 @@ footer {
   }
 
   .button {
-    padding: 5px 10px;
-    font-size: 11px;
+    padding: 9px 14px;
+    font-size: 12px;
+  }
+
+  .ProductButton {
+    padding: 9px 14px;
+    font-size: 12px;
   }
 
   .description {
@@ -467,8 +563,10 @@ footer {
   }
 
   .button {
-    padding: 6px 8px;
-    font-size: 10px;
+    width: 70%;
+    margin-bottom: 10px;
+    margin: auto;
+    padding: 6px 10px;
   }
 
   .description {
@@ -489,9 +587,28 @@ footer {
   padding: 10px 0;
 }
 
+.cart-item-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.cart-item-title {
+  font-size: 1em;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.cart-item-title:hover {
+  text-decoration: underline;
+}
+
 .item-info {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 
 .remove-button {
@@ -512,16 +629,23 @@ footer {
   margin-top: 20px;
 }
 
+.checkout-description {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #747474;
+}
+
 .checkout-button {
   background-color: #007bff;
   color: white;
   width: 100%;
-}
-
-.complete-button {
-  background-color: #007bff;
-  color: white;
-  width: 100%;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 20px;
 }
 
 /* Checkout Success Page */
@@ -529,8 +653,14 @@ footer {
   text-align: center;
 }
 
+.success-container > p {
+  color: #747474;
+  margin-bottom: 30px;
+}
+
 .success-title {
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .back-button {
@@ -579,4 +709,10 @@ footer {
   justify-content: center;
   width: 65%;
   margin: 0 auto;
+}
+
+@media (min-width: 1700px) {
+  .products-container {
+    max-width: 1200px;
+  }
 }
